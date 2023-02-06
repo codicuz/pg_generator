@@ -91,6 +91,9 @@ def get_record_by_sequence():
     
     conn.commit()
 
+    cursor.close()
+    conn.close()
+
 if __name__ == '__main__':
     main()
     # create_db()
